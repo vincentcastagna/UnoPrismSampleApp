@@ -4,7 +4,7 @@ using System.Text;
 using Prism.Commands;
 using Prism.Windows.Navigation;
 
-namespace UnoPoc.Shared.ViewModels
+namespace UnoPoc.ViewModels
 {
 
     public class ContentPageViewModel
