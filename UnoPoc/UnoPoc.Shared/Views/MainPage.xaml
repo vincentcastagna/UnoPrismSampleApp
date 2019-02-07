@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="UnoPoc.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mvvm="using:Prism.Windows.Mvvm"
+    mc:Ignorable="d"
+    mvvm:ViewModelLocator.AutoWireViewModel="True"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="30" HorizontalAlignment="Center" 
+                   FontWeight="Bold" Text="Welcome to Uno Prism"></TextBlock>
+        <Button Grid.Row="1" Margin="0,10,0,0" Command="{Binding NavigateCommand}" Background="#1A2634"
+                Content="ClickToNavigate" Foreground="White" 
+                HorizontalAlignment="Center"></Button>
+    </Grid>
+</Page>
